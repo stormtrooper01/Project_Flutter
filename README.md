@@ -14,13 +14,12 @@
 This particular application is written in Flutter, which is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia and the web from a single codebase. 
 
 ## 🛠 Features
+- Sign up or sign in if you already have an account
 - Create personal account
-- Sign up with Google
 - Choose from many options
 - Search for favourite food
 - Order anything you want
 - Add items to a cart
-- Pay with debit/credit card
 
 ## 📱 Screenshots
 
