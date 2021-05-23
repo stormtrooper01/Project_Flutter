@@ -9,4 +9,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Login page
 - Cart page
-- Ability to order with debit/credit card
+- Profile page
+- Explore page
