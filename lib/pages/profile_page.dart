@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_flutter_zone/src/models/user_info_model.dart';
-import 'package:food_app_flutter_zone/src/scoped-model/main_model.dart';
-import 'package:food_app_flutter_zone/src/widgets/small_button.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
