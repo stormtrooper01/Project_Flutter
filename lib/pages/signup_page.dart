@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_flutter_zone/src/pages/signin_page.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import '../enums/auth_mode.dart';
+import '../pages/signin_page.dart';
+import '../scoped-model/main_model.dart';
+import '../widgets/show_dailog.dart';
 
 
 class SignUpPage extends StatefulWidget {
