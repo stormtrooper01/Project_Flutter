@@ -21,10 +21,8 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int currentTab = 0;
 
-  // Pages
   HomePage homePage;
   OrderPage orderPage;
-  FavoritePage favoritePage;
   ProfilePage profilePage;
 
   List<Widget> pages;
@@ -34,9 +32,8 @@ class _MainScreenState extends State<MainScreen> {
     widget.model.fetchAll();
     homePage = HomePage();
     orderPage = OrderPage();
-    favoritePage = FavoritePage(model: widget.model);
     profilePage = ProfilePage();
-    pages = [homePage, favoritePage, orderPage, profilePage];
+    pages = [homePage, orderPage, profilePage];
     currentPage = homePage;
     super.initState();
   }
