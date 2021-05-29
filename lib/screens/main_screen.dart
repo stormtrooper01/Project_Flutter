@@ -6,7 +6,6 @@ import '../pages/signin_page.dart';
 import '../scoped-model/main_model.dart';
 import '../pages/home_page.dart';
 import '../pages/order_page.dart';
-import '../pages/explore_page.dart';
 import '../pages/profile_page.dart';
 
 class MainScreen extends StatefulWidget {
