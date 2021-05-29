@@ -23,6 +23,8 @@ This particular application is written in Flutter, which is an open-source UI so
 
 ## 📱 Screenshots
 
+![](examples/cart_page.png) ![](examples/food_details.png) ![](examples/signin_page.png) ![](examples/profile_page.png)
+
 ## 📃 License
 
 This project has [MIT License](https://github.com/stormtrooper01/photoeditor/blob/main/LICENSE).
