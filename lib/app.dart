@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import './signin_page.dart';
-import './main_model.dart';
-import './main_screen.dart';
-import './scoped_model.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import './pages/signin_page.dart';
+import './scoped-model/main_model.dart';
+import './screens/main_screen.dart';
 
 class App extends StatelessWidget {
   final MainModel mainModel = MainModel();
