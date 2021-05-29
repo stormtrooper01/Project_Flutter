@@ -100,25 +100,6 @@ class _MainScreenState extends State<MainScreen> {
               SizedBox(
                 height: 20.0,
               ),
-
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pop();
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (BuildContext context) => AddFoodItem()));
-                },
-                leading: Icon(Icons.add_circle,
-                size: 30.0,
-                  color: Colors.black,
-                ),
-                title: Text(
-                  "Add food item",
-                  style: TextStyle(
-                      fontSize: 20.0,
-                    fontFamily: 'Roboto'
-                  ),
-                ),
-              )
             ],
           ),
         ),
