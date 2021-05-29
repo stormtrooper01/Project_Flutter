@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
+
 import '../pages/food_details_page.dart';
 import '../scoped-model/main_model.dart';
 import '../widgets/bought_foods.dart';
-import '../scoped_model.dart';
 import '../widgets/home_top_info.dart';
 import '../widgets/food_category.dart';
 import '../widgets/search_file.dart';
