@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import '../scoped-model/main_model.dart';
+import '../widgets/show_dailog.dart';
+import '../pages/signup_page.dart';
 
 class SignInPage extends StatefulWidget {
   @override
