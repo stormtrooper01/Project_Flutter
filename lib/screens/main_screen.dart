@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-import '../admin/pages/add_food_item.dart';
 import '../pages/signin_page.dart';
 import '../scoped-model/main_model.dart';
 import '../pages/home_page.dart';
