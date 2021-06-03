@@ -44,7 +44,6 @@ class UserModel extends Model {
       final http.Response response = await http
           .get("https://flutter-food-a2151.firebaseio.com/users.json");
 
-      // print("Fecthing data: ${response.body}");
       final Map<String, dynamic> fetchedData = json.decode(response.body);
 
       final List<UserInfo> userInfos = [];
@@ -147,18 +146,19 @@ class UserModel extends Model {
 
     String message;
     bool hasError = false;
+    final url = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA62Y14Eu3iCTYBYZVFi4pNPXjL702baOI";
 
     try {
       http.Response response;
       if (authMode == AuthMode.SignUp) {
         response = await http.post(
-          "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA62Y14Eu3iCTYBYZVFi4pNPXjL702baOI",
+          url,
           body: json.encode(authData),
           headers: {'Content-Type': 'application/json'},
         );
       } else if (authMode == AuthMode.SignIn) {
         response = await http.post(
-          "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA62Y14Eu3iCTYBYZVFi4pNPXjL702baOI",
+          url,
           body: json.encode(authData),
           headers: {'Content-Type': 'application/json'},
         );
@@ -195,11 +195,12 @@ class UserModel extends Model {
         prefs.setString("expiryTime", responseBody['expiresIn']);
       } else {
         hasError = true;
-        if (responseBody['error']['message'] == 'EMAIL_EXISTS') {
+        var err = responseBody['error']['message'];
+        if (err == 'EMAIL_EXISTS') {
           message = "Email already exists";
-        } else if (responseBody['error']['message'] == "EMAIL_NOT_FOUND") {
+        } else if (err == "EMAIL_NOT_FOUND") {
           message = "Email does not exist";
-        } else if (responseBody['error']['message'] == "INVALID_PASSWORD") {
+        } else if (err == "INVALID_PASSWORD") {
           message = "Password is incorrect";
         }
       }
