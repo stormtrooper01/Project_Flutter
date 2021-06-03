@@ -180,13 +180,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                 "App Notification",
                                 style: TextStyle(
                                   fontSize: 16.0,
-                                  fontFamily: 'Robto'
+                                  fontFamily: 'Roboto'
                                 ),
                               ),
                               Switch(
                                 value: turnOnNotification,
                                 onChanged: (bool value) {
-                                  // print("The value: $value");
                                   setState(() {
                                     turnOnNotification = value;
                                   });
@@ -211,7 +210,6 @@ class _ProfilePageState extends State<ProfilePage> {
                               Switch(
                                 value: turnOnLocation,
                                 onChanged: (bool value) {
-                                  // print("The value: $value");
                                   setState(() {
                                     turnOnLocation = value;
                                   });
