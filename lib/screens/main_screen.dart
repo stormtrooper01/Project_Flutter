@@ -45,21 +45,6 @@ class _MainScreenState extends State<MainScreen> {
           backgroundColor: Colors.yellow[800],
           elevation: 0,
           iconTheme: IconThemeData(color: Colors.black),
-          title: Text(
-            currentTab == 0
-                ? "Food App"
-                : currentTab == 1
-                    ? "All Food Items"
-                    : currentTab == 2
-                        ? "Orders"
-                        : "Profile",
-            style: TextStyle(
-                color: Colors.black,
-                fontFamily: 'Roboto',
-                fontSize: 16.0,
-                fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
           actions: <Widget>[
             IconButton(
                 icon: Icon(
