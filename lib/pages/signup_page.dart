@@ -229,16 +229,13 @@ class _SignUpPageState extends State<SignUpPage> {
         "userType": "customer",
       };
 
-      authenticate(_email, _password,
-              authMode: AuthMode.SignUp, userInfo: userInfo)
+    authenticate(_email, _password, authMode: AuthMode.SignUp, userInfo: userInfo)
           .then((final response) {
         Navigator.of(context).pop();
         if (!response['hasError']) {
-          // Todo - Navigate to the homepage
           Navigator.of(context).pop();
           Navigator.of(context).pushNamed("/mainscreen");
         } else {
-          // todo - display the error message in the snackbar
           Navigator.of(context).pop();
           _scaffoldKey.currentState.showSnackBar(
             SnackBar(
